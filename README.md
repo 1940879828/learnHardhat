@@ -12,4 +12,15 @@ npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Lock.ts
+npx hardhat run scripts/deploy.js --network localhost
 ```
+
+### how to delopy contract on hardhat
+
+1. A built-in node that runs the hardhat network locally on your machine
+   `npx hardhat node`
+
+The node port is 8545 (http://127.0.0.1:8545/)
+
+2. Deploy the contract to the local network
+   `npx hardhat run scripts/deploy.ts --network localhost`

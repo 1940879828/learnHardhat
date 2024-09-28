@@ -22,7 +22,7 @@ describe("Lock", function () {
 
     // Contracts are deployed using the first signer/account by default
     // 合约默认使用第一个签名者/账户进行部署
-    const [owner, otherAccount] = await hre.viem.getWalletClients();
+    const [owner, otherAccount, ] = await hre.viem.getWalletClients();
 
     const lock = await hre.viem.deployContract("Lock", [unlockTime], {
       value: lockedAmount,
